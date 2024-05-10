@@ -15,7 +15,7 @@ interface InputProps extends ReactDatePickerProps {
   errorMessage?: string;
 }
 
-function Input(
+function DatePicker(
   { className, error, errorMessage, ...props }: InputProps,
   ref: LegacyRef<HTMLInputElement> | undefined
 ) {
@@ -41,4 +41,4 @@ function Input(
   );
 }
 
-export default forwardRef(Input);
+export default forwardRef(DatePicker);
